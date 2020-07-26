@@ -15,6 +15,8 @@
 # along with this program; if not, write to the Free Software                     #
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA. #
 ###################################################################################
+#
+# source: https://forums.gentoo.org/viewtopic-t-1092792-postdays-0-postorder-asc-start-75.html#8478520
 
 EAPI=7
 
