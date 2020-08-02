@@ -23,7 +23,7 @@ EAPI="7"
 inherit git-r3 toolchain-funcs
 
 DESCRIPTION="suid program that helps to implement a workaround for using modesetting driver under rootless xorg"
-HOMEPAGE="https://github.com/gch1p/drm_master_util"
+HOMEPAGE="https://github.com/gch1p/drm_master_util https://ch1p.io/non-root-xorg-modesetting/"
 EGIT_REPO_URI="https://github.com/gch1p/drm_master_util.git"
 EGIT_BRANCH="master"
 EGIT_COMMIT="e9412bbc8df43ee3282ae515198b39ae7c99f09d"
