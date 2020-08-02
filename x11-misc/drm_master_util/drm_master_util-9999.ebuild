@@ -26,7 +26,7 @@ DESCRIPTION="suid program that helps to implement a workaround for using modeset
 HOMEPAGE="https://github.com/gch1p/drm_master_util"
 EGIT_REPO_URI="https://github.com/gch1p/drm_master_util.git"
 EGIT_BRANCH="master"
-EGIT_COMMIT="2a453f362d34674b2adfc9f29bb781a0ba7a69c2"
+EGIT_COMMIT="e9412bbc8df43ee3282ae515198b39ae7c99f09d"
 
 LICENSE="MIT"
 SLOT="0"
