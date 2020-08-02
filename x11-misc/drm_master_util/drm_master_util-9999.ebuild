@@ -18,7 +18,7 @@
 #
 # source: https://forums.gentoo.org/viewtopic-t-1092792-postdays-0-postorder-asc-start-75.html#8478520
 
-EAPI=7
+EAPI="7"
 
 inherit git-r3 toolchain-funcs
 
@@ -39,7 +39,8 @@ DEPEND="x11-libs/libdrm"
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
 
-src_compile() {
+src_compile()
+{
    tc-export PKG_CONFIG
    local LIBDRM_CFLAGS="$(${PKG_CONFIG} --cflags libdrm)"
    local LIBDRM_LIBS="$(${PKG_CONFIG} --libs libdrm)"
@@ -48,10 +49,8 @@ src_compile() {
       die "Could not compile ${PN}"
 }
 
-src_install() {
-   dobin "${S}"/${MY_PN}
-}
-
-pkg_postinst() {
+src_install()
+{
+   dobin "${S}/${MY_PN}"
    fperms 4755 /usr/bin/${MY_PN}
 }
