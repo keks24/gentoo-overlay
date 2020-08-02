@@ -52,5 +52,5 @@ src_compile()
 src_install()
 {
    dobin "${S}/${MY_PN}"
-   fperms 4755 /usr/bin/${MY_PN}
+   fperms 4711 /usr/bin/${MY_PN}
 }
