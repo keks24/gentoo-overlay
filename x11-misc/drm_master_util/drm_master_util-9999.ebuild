@@ -33,8 +33,6 @@ SLOT="0"
 IUSE=""
 KEYWORDS="~amd64 ~x86"
 
-MY_PN="drm_master_util"
-
 DEPEND="x11-libs/libdrm"
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
@@ -44,13 +42,13 @@ src_compile()
    tc-export PKG_CONFIG
    local LIBDRM_CFLAGS="$(${PKG_CONFIG} --cflags libdrm)"
    local LIBDRM_LIBS="$(${PKG_CONFIG} --libs libdrm)"
-   $(tc-getCC) -o ${MY_PN} ${CPPFLAGS} ${LIBDRM_CFLAGS} ${CFLAGS} \
+   $(tc-getCC) -o ${PN} ${CPPFLAGS} ${LIBDRM_CFLAGS} ${CFLAGS} \
       ${LDFLAGS} drm_master_util.c ${LIBDRM_LIBS} ||
       die "Could not compile ${PN}"
 }
 
 src_install()
 {
-   dobin "${S}/${MY_PN}"
-   fperms 4711 /usr/bin/${MY_PN}
+   dobin "${S}/${PN}"
+   fperms 4711 /usr/bin/${PN}
 }
